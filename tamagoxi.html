@@ -1,10 +1,32 @@
 <html>
   <head>
     <title>Tamagoxi</title>
+    <style type="text/css">
+    	img{
+    		width: 50vw;
+    	}
+
+    	.ditto{
+    		margin-top:100px; 
+    		text-align:center;
+    		cursor:pointer;
+    	}
+    </style>
+
+    <script type="text/javascript">
+    	function touchRock(){
+    		var userName = prompt("Qual o seu nome?", "Nomizin aqui.");
+
+    		if (userName){
+    			alert("prazer em conhecer você" + userName + ".");
+    			document.getElementById("rockImg").src = "http://www.leviathyn.com/wp-content/uploads/2013/02/Ditto.jpg";
+    		}
+    	}
+    </script>
   </head>
-  <body>
-    <div style="margin-top:100px; text-align:center;">
-      <img id="rockimg" src="http://s696.photobucket.com/user/vatek/media/Ditto.png">
+  <body onload="alert('Oi eu so o Ditto')">
+    <div class="ditto">
+      <img onclick="touchRock()" id="rockImg" src="http://1.bp.blogspot.com/-2O5-aiUzKYY/UxuoqPBEToI/AAAAAAAAC1w/M7-1ugC6RPk/s1600/Ditto_AG_anime.png">
     </div>
   </body>
 </html>
